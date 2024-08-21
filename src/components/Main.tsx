@@ -31,7 +31,7 @@ const Main: React.FC = () => {
   };
 
   return (
-    <main className="flex flex-col md:flex-row justify-around items-center w-full h-full p-8 ">
+    <main className="flex flex-col gap-8 md:flex-row justify-around items-center w-full h-full p-8 ">
       <div className="flex flex-col items-center flex-shrink-0">
         <div className=" border-2 border-black rounded-lg ">
           <Image
@@ -45,12 +45,12 @@ const Main: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col items-center max-w-lg flex-grow">
-        <div className="h-52 w-full p-4 flex items-center justify-center overflow-y-auto border-2 border-black rounded-lg sm:ml-6">
+        <div className="h-52 w-full p-2 flex items-center justify-center overflow-y-auto border-2 border-black rounded-lg sm:ml-6">
           <p className="text-2xl text-center">{quote}</p>
         </div>
         <button
           onClick={fetchQuote}
-          className="bg-black  text-white p-4 rounded-lg my-12 md:my-8 hover:bg-gradient-to-r hover:from-black hover:to-gray-600 hover:border-gray-500 hover:scale-102 hover:shadow-md hover:text-gray-100"
+          className="bg-black text-white p-4 rounded-lg my-8 hover:bg-gradient-to-r hover:from-black hover:to-gray-600 hover:border-gray-500 hover:scale-102 hover:shadow-md hover:text-gray-100"
         >
           Get New Quote
         </button>
