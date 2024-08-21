@@ -1,15 +1,14 @@
 generator client {
-  provider = "prisma-client-js"
+  provider = "prisma-client-js" // This line tells Prisma to generate the client for use in our code.
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "postgresql" // We're using PostgreSQL as our database provider.
+  url      = env("DATABASE_URL") // The connection string to our database is stored in an environment variable.
 }
 
-
 model VisitorCount {
-  id        Int      @id @default(autoincrement()) 
-  count     Int
-  createdAt DateTime @default(now())              
+  id        Int      @id @default(autoincrement()) // The primary key, automatically incremented.
+  count     Int      // This will store the number of visitors.
+  createdAt DateTime @default(now())              // Timestamp for when each record is created, defaults to the current time.
 }
