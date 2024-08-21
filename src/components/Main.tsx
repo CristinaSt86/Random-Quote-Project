@@ -46,7 +46,7 @@ const Main: React.FC = () => {
       </div>
       <div className="flex flex-col items-center max-w-lg flex-grow">
         <div className="h-52 w-full p-2 flex items-center justify-center overflow-y-auto border-2 border-black rounded-lg sm:ml-6">
-          <p className="text-2xl text-center">{quote}</p>
+          <p className="text-xl text-center">{quote}</p>
         </div>
         <button
           onClick={fetchQuote}
