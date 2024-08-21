@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
   }, []);
 
   return (
-    <footer className="bg-gray-800 text-white p-4 text-center w-full mt-auto">
+    <footer className="bg-black text-white p-4 text-center w-full mt-auto">
       <p>Visitors: {visitorCount}</p>
     </footer>
   );
